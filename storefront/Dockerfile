@@ -1,15 +1,15 @@
-FROM node:20.8.0-alpine as deps
+FROM node:20.8.0-alpine AS deps
 WORKDIR /app/storefront
 
 # copy required files
 COPY package.json .
-COPY yarn.lock .
+# COPY yarn.lock .
 
 # install deps
 RUN yarn install --frozen-lockfile
 
 # intermediate build stage
-FROM node:20.8.0-alpine as runner
+FROM node:20.8.0-alpine AS runner
 WORKDIR /app/storefront
 
 # copy node_modules from deps

@@ -1,5 +1,70 @@
 {
-  "node": {},
+  "node": {
+    "129fd834ae2e7995608c87c8458468bc72b013c1": {
+      "workers": {
+        "app/[countryCode]/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fapp%2Fstorefront%2Fsrc%2Fmodules%2Fcart%2Factions.ts%22%2C%5B%22addToCart%22%2C%22enrichLineItems%22%2C%22getOrSetCart%22%2C%22deleteLineItem%22%2C%22retrieveCart%22%2C%22updateLineItem%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/[countryCode]/(main)/page": "rsc"
+      }
+    },
+    "255909764d8db8e8db9547c426cee5c7306b5f7f": {
+      "workers": {
+        "app/[countryCode]/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fapp%2Fstorefront%2Fsrc%2Fmodules%2Fcart%2Factions.ts%22%2C%5B%22addToCart%22%2C%22enrichLineItems%22%2C%22getOrSetCart%22%2C%22deleteLineItem%22%2C%22retrieveCart%22%2C%22updateLineItem%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/[countryCode]/(main)/page": "rsc"
+      }
+    },
+    "2ceed8fc9e6cb055da9a3aca89786e2f194ea5c7": {
+      "workers": {
+        "app/[countryCode]/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fapp%2Fstorefront%2Fsrc%2Fmodules%2Fcart%2Factions.ts%22%2C%5B%22addToCart%22%2C%22enrichLineItems%22%2C%22getOrSetCart%22%2C%22deleteLineItem%22%2C%22retrieveCart%22%2C%22updateLineItem%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/[countryCode]/(main)/page": "rsc"
+      }
+    },
+    "8c52831e15a8da5d18c0a364c9e5d171d8208f9a": {
+      "workers": {
+        "app/[countryCode]/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fapp%2Fstorefront%2Fsrc%2Fmodules%2Fcart%2Factions.ts%22%2C%5B%22addToCart%22%2C%22enrichLineItems%22%2C%22getOrSetCart%22%2C%22deleteLineItem%22%2C%22retrieveCart%22%2C%22updateLineItem%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/[countryCode]/(main)/page": "rsc"
+      }
+    },
+    "a51754a3c85ef7efc80c96ae4c8900f6356e62f0": {
+      "workers": {
+        "app/[countryCode]/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fapp%2Fstorefront%2Fsrc%2Fmodules%2Fcart%2Factions.ts%22%2C%5B%22addToCart%22%2C%22enrichLineItems%22%2C%22getOrSetCart%22%2C%22deleteLineItem%22%2C%22retrieveCart%22%2C%22updateLineItem%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/[countryCode]/(main)/page": "rsc"
+      }
+    },
+    "d2ee28b54aff28d8c48fc66db2b6c02555797650": {
+      "workers": {
+        "app/[countryCode]/(main)/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fapp%2Fstorefront%2Fsrc%2Fmodules%2Fcart%2Factions.ts%22%2C%5B%22addToCart%22%2C%22enrichLineItems%22%2C%22getOrSetCart%22%2C%22deleteLineItem%22%2C%22retrieveCart%22%2C%22updateLineItem%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/[countryCode]/(main)/page": "rsc"
+      }
+    },
+    "33ec24de53085f90cc9ed2b75e174dba2d23a145": {
+      "workers": {
+        "app/[countryCode]/(main)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fapp%2Fstorefront%2Fsrc%2Fapp%2Factions.ts%22%2C%5B%22resetOnboardingState%22%2C%22updateRegion%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/[countryCode]/(main)/page": "action-browser"
+      }
+    },
+    "87f498bc5705c2c8f4e45de57a9a19e64249b478": {
+      "workers": {
+        "app/[countryCode]/(main)/page": "(action-browser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2Fapp%2Fstorefront%2Fsrc%2Fapp%2Factions.ts%22%2C%5B%22resetOnboardingState%22%2C%22updateRegion%22%5D%5D%5D&__client_imported__=true!"
+      },
+      "layer": {
+        "app/[countryCode]/(main)/page": "action-browser"
+      }
+    }
+  },
   "edge": {},
-  "encryptionKey": "GXf43J9RIK2G8wqV+cnCsTAIrwsJmSrk67Qhp4JbWLA="
+  "encryptionKey": "I208KH4LohnKV6l0YRQs6uOW8lfzY9pGjn4vGrY326o="
 }

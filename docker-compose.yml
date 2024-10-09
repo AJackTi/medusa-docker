@@ -48,6 +48,7 @@ services:
       - "8000:8000"
     environment:
       NEXT_PUBLIC_BASE_URL: http://localhost:8000
+      NEXT_PUBLIC_MEDUSA_BACKEND_URL: http://medusa-server:9000
       POSTGRES_DRIVER_OPTIONS: '{"connection":{"ssl":false}}'
     depends_on:
       - backend
