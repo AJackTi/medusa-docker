@@ -1,0 +1,53 @@
+version: "3.8"
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: backend:test
+    container_name: medusa-server
+    depends_on:
+      - postgres
+      - redis
+    ports:
+      - "9000:9000"
+    environment:
+      DATABASE_URL: postgres://postgres:postgres@postgres:5432/medusa-docker
+      POSTGRES_URL: postgres://postgres:postgres@postgres:5432/medusa-docker
+      POSTGRES_DRIVER_OPTIONS: '{"connection":{"ssl":false}}'
+      NODE_ENV: development
+      REDIS_URL: redis://redis
+      JWT_SECRET: some_jwt_secret
+      COOKIE_SECRET: some_cookie_secret
+      PORT: 9000
+
+  postgres:
+    image: postgres:10.4
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: medusa-docker
+      PGSSLMODE: disable
+    command: ["postgres", "-c", "ssl=off"] # supply a certificate to enable
+
+  redis:
+    image: redis
+    container_name: redis
+    expose:
+      - 6379
+
+  storefront:
+    build:
+      context: ./storefront
+      dockerfile: Dockerfile
+    image: storefront:test
+    container_name: medusa-storefront
+    ports:
+      - "8000:8000"
+    environment:
+      NEXT_PUBLIC_BASE_URL: http://localhost:8000
+      POSTGRES_DRIVER_OPTIONS: '{"connection":{"ssl":false}}'
+    depends_on:
+      - backend
