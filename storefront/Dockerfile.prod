@@ -1,0 +1,25 @@
+FROM node:20.8.0-alpine as deps
+WORKDIR /app/storefront
+
+# copy required files
+COPY package.json .
+COPY yarn.lock .
+
+# install deps
+RUN yarn install --frozen-lockfile
+
+# build stage
+FROM node:20.8.0-alpine as builder
+WORKDIR /app/storefront
+
+# copy node_modules from deps
+COPY --from=deps /app/storefront/node_modules /app/storefront/node_modules
+
+# copy project files to current workdir
+COPY . .
+
+# run build
+RUN yarn build
+
+# run storefront in production mode
+ENTRYPOINT [ "yarn", "start" ]
